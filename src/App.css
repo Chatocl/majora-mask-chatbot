@@ -17,40 +17,9 @@ body {
   background-color: rgba(87, 87, 87, 0.8);
   padding: 20px;
   border-radius: 10px;
-  width: 100vh;
+  width: 70vh;
+  max-width: 90vw;
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .App {
-    width: 90vw;
-    padding: 15px;
-  }
-
-  #chat-window {
-    height: 60vh;
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-
-  #user-input {
-    width: 70%;
-  }
-
-  #send-button {
-    width: 25%;
-    padding: 10px;
-  }
-
-  .user-message, .bot-message {
-    max-width: 85%;
-  }
-
-  .skull-kid-image {
-    width: 40px;
-  }
 }
 
 h1 {
@@ -63,12 +32,12 @@ h1 {
   background-color: #333;
   padding: 10px;
   border-radius: 5px;
-  height: 55vh;
+  height: 70vh; 
   overflow: hidden;
 }
 
 #chat-output {
-  height: 45vh;
+  height: 60vh; 
   overflow-y: scroll;
   margin-bottom: 10px;
   padding: 10px;
@@ -113,7 +82,8 @@ h1 {
   padding: 10px;
   border-radius: 15px;
   position: relative;
-  text-align: left; /* Alinea el texto a la izquierda */
+  text-align: left;
+  word-wrap: break-word;
 }
 
 .user-message {
