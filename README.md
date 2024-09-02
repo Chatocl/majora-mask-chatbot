@@ -33,6 +33,3 @@ La aplicación estará disponible en http://localhost:3000.
 * Backend: Python con Flask
 * Estilos: CSS
 
- [![Majora's Mask Chatbot Video](https://img.youtube.com/vi/vbMQfaG6lo8/0.jpg)](https://www.youtube.com/watch?v=vbMQfaG6lo8)
-
-
