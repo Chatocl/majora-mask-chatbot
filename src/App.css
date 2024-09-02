@@ -1,38 +1,155 @@
+body {
+  background-image: url('/src/Images/zelda-background.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  font-family: 'Trebuchet MS', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
 .App {
+  background-color: rgba(87, 87, 87, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media (max-width: 768px) {
+  .App {
+    width: 90vw;
+    padding: 15px;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  #chat-window {
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  #user-input {
+    width: 70%;
+  }
+
+  #send-button {
+    width: 25%;
+    padding: 10px;
+  }
+
+  .user-message, .bot-message {
+    max-width: 85%;
+  }
+
+  .skull-kid-image {
+    width: 40px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #FFD700;
+}
+
+#chat-window {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  height: 55vh;
+  overflow: hidden;
+}
+
+#chat-output {
+  height: 45vh;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
+}
+
+#chat-output::-webkit-scrollbar {
+  width: 8px;
+}
+
+#chat-output::-webkit-scrollbar-track {
+  background: #333;
+}
+
+#chat-output::-webkit-scrollbar-thumb {
+  background-color: #FFD700;
+  border-radius: 5px;
+}
+
+.user-message-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.bot-message-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.bot-message-wrapper {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.user-message, .bot-message {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.user-message {
+  background-color: #FFD700;
+  color: black;
+  border-bottom-right-radius: 0;
+}
+
+.bot-message {
+  background-color: #444;
   color: white;
+  border-bottom-left-radius: 0;
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.skull-kid-image {
+  width: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#user-input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+}
+
+#send-button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFD700;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#send-button:hover {
+  background-color: #FFA500;
 }
